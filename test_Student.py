@@ -21,6 +21,13 @@ def test_student_college():
     )
     assert student["college"] == "ABC College"
 
+def test_student_email():
+    student = get_student_details(
+        "Rahul", "01FE25BCA001", "ABC College",
+        "Hubballi", "rahul@example.com"
+    )
+    assert student["email"] == "rahul@example.com"
+
 
 def test_student_city():
     student = get_student_details(
