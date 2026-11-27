@@ -10,7 +10,7 @@ def get_student_details(name, usn, college, city):
 
 if __name__ == "__main__":
     name=sys.argv[1]
-    usn=int(sys.argv[2])
+    usn=sys.argv[2]
     college=sys.argv[3]
     city=sys.argv[4]
 
