@@ -1,3 +1,4 @@
+import sys
 def get_student_details(name, usn, college, city):
     return {
         "name": name,
@@ -8,15 +9,15 @@ def get_student_details(name, usn, college, city):
 
 
 if __name__ == "__main__":
-    name = input("Enter student name: ")
-    usn = input("Enter USN: ")
-    college = input("Enter college name: ")
-    city = input("Enter city: ")
+    name=sys.argv[1]
+    usn=int(sys.argv[2])
+    college=sys.argv[3]
+    city=sys.argv[4]
 
     student = get_student_details(name, usn, college, city)
 
     print("\n--- Student Details ---")
-    print("Name:", student["name"])
-    print("USN:", student["usn"])
-    print("College:", student["college"])
-    print("City:", student["city"])
+    print("Name:", name)
+    print("USN:", usn)
+    print("College:", college)
+    print("City:", city)
