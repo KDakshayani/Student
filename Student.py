@@ -16,7 +16,7 @@ if __name__ == "__main__":
     email=sys.argv[4]
     city=sys.argv[5]
 
-    student = get_student_details(name, usn, college, city,email)
+    student = get_student_details(name, usn, college, email,city)
 
     print("\n--- Student Details ---")
     print("Name:", name)
